@@ -1,0 +1,11 @@
+{% macro stars(count = 0) %}
+  <span class="stars is-count-{{ count }}" aria-label="{{ count }} {{ "star" if count == 1 else "stars" }}">
+    {% for star in [1, 2, 3, 4, 5] %}
+      <span class="star{{ " is-filled" if star <= count }}">{{ "★" if star <= count else "☆" }}</span>
+    {% endfor %}
+  </span>
+{% endmacro %}
+
+{% macro flag(country) %}
+  <img src="/img/{{ country }}.svg" class="flag" role="presentation">
+{% endmacro %}

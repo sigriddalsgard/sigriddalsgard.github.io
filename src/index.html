@@ -1,0 +1,148 @@
+{% from "tpl/macros.html" import stars, flag %}
+
+{% extends "tpl/layout.html" %}
+
+{% block content %}
+  <head>
+    <meta charset="UTF-8">
+  </head>
+
+  <header class="header">
+    <div class="container">
+      <h1>Sigrið Gyldenkærne Dalsgarð</h1>
+    </div>
+  </header>
+
+  <main>
+    <section title="About">
+      <div class="container compact">
+        <h2>About</h2>
+
+        <ul class="columns about">
+          <li><span>&#127881;</span><br> 12.02.1991</li> 
+          <li><span>&#128222;</span><br> <a href="tel:+45 30 48 66 55">+45 30 48 66 55</a></li>
+          <li><span>&#128233;</span><br> sigrid.dalsgard@gmail.com</li>
+          <li><span>&#128236;</span><br> Frueled 44<br> Nykøbing Mors</li>
+        </ul>
+      </div>
+    </section>
+
+    <section title="Landmarks">
+      <div class="container compact">
+        <h2>Languages</h2>
+
+        <ul class="columns languages">
+          <li>Faroese {{ flag("fo") }}<br><small>Native</small></li>
+          <li>Danish {{ flag("dk") }}<br><small>Native</small></li>
+          <li>English {{ flag("gb") }}<br><small>Fluent</small></li>
+        </ul>
+      </div>
+    </section>
+
+    <section title="Education">
+      <div class="container compact">
+        <h2>Education</h2>
+
+        <ul class="columns education">
+          <li>
+            <small>2023 - Current</small>
+            <br>Mathematics
+            <br><small><a href="http://bachelor.au.dk/matematik">Aarhus University</a></small>
+          </li>
+          <li>
+            <small>2017 - 2019</small>
+            <br>Mathematics
+            <br><small><a href="http://ku.dk/">University of Copenhagen</a></small>
+          </li>
+          <li>
+            <small>2014 - 2015</small>
+            <br>Softwaredevelopment
+            <br><small><a href="http://www.itu.dk/">IT-University of Copenhagen</a></small>
+          </li>
+          <li>
+            <small>2012 - 2014</small>
+            <br>Mathematics and Economics
+            <br><small><a href="http://ku.dk/">University of Copenhagen</a></small>
+          </li>
+          <li>
+            <small>2013</small>
+            <br>NLP Practitioner
+            <br><small><a href="http://www.makani.com/en/">Makani Academy</a></small>
+          </li>
+          <li>
+            <small>2008 - 2011</small>
+            <br>STX
+            <br><small>Faroe Islands</small>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section title="Skills">
+      <div class="container compact page-break">
+        <h2>Skills</h2>
+
+        <ul class="columns skills">
+          <li>Java<br>{{ stars(2) }}</li>
+          <li>C#<br>{{ stars(1) }}</li>
+          <li>CSS<br>{{ stars(2) }}</li>
+          <li>Motherhood<br>{{ stars(5) }}</li>
+          <li>HTML<br>{{ stars(2) }}</li>
+          <li>Microsoft Office<br>{{ stars(3) }}</li>
+          <li>JavaScript<br>{{ stars(1) }}</li>
+          <li>SQL<br>{{ stars(2) }}</li>
+          <li>R<br>{{ stars(2) }}</li>
+          <li>LaTeX<br>{{ stars(4) }}</li>
+          <li>Maple<br>{{ stars(3) }}</li>
+          <li>Python<br>{{ stars(2) }}</li>
+        </ul>
+      </div>
+    </section>
+
+    <section title="courses">
+      <div class="container compact">
+        <h2>Courses</h2>
+        
+        <h3>University of Copenhagen</h3>
+        <ul class="columns courses">
+          <li>Introduction to the Mathematical Sciences<br><small>7.5 ects</small></li>
+          <li>Discrete mathematics<br><small>7.5 ects</small></li>
+          <li>Introduction to Economics<br><small>7.5 ects</small></li>
+          <li>Analysis 0<br><small>7.5 ects</small></li>
+          <li>Analysis 1<br><small>7.5 ects</small></li>
+          <li>Analysis 2<br><small>7.5 ects</small></li>
+          <li>Geometry 1<br><small>7.5 ects</small></li>
+          <li>Complex Analysis<br><small>7.5 ects</small></li>
+          <li>Linear Algebra in the Mathematical Sciences<br><small>7.5 ects</small></li>
+          <li>Probability Theory and Statistics<br><small>7.5 ects</small></li>
+          <li>Statistics 1<br><small>7.5 ects</small></li>
+          <li>Statistics 2<br><small>7.5 ects</small></li>
+          <li>Advanced Statistics<br><small>7.5 ects</small></li>
+          <li>Theory of the Mathematical Sciences<br><small>7.5 ects</small></li>
+          <li>Measures and Integrals<br><small></span>7.5 ects</small></li>
+          <li>Introduction to Numerical Analysis<br><small>7.5 ects</small></li>
+        </ul>
+
+        <h3>Aarhus University</h3>
+        <ul class="columns courses">
+          <li>Advanced Probability Theory<br><small>10 ects</small></li>
+        </ul>
+
+        <h3>IT-University of Copenhagen</h3>
+        <ul class="columns courses">
+          <li>Introductory Programming: Java<br><small>15 ects</small></li>
+          <li>Project Work and Communication<br><small>7.5 ects</small></li>
+          <li>Discrete Mathematics<br><small>7.5 ects</small></li>
+          <li>Systematic Design of User Interfaces<br><small>7.5 ects</small></li>
+          <li>First-year project: Java<br><small>15 ects</small></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      Copyright &copy; 2023 Sigrið Gyldenkærne Dalsgarð
+    </div>
+  </footer>
+{% endblock %}

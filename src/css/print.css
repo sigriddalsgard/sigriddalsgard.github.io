@@ -1,0 +1,11 @@
+@media print {
+    .page-break {
+        break-before: page;
+  }
+}
+
+@page {
+    @bottom-center {
+      content: "Page " counter(page);
+    }
+  }

@@ -1,0 +1,171 @@
+@import url("normalize.css");
+@import url("./print.css");
+
+:root {
+  --font-family-base: "Assistant", sans-serif;
+  --font-size-base: 22px;
+  --font-weight-base: 300;
+  --line-height-base: 1.6;
+
+  --color-base: #222;
+  --color-link: #1864ab;
+  --color-small: #767676;
+
+  --font-weight-heading: 400;
+  --line-height-heading: 1.2;
+
+  --font-family-code: "Inconsolata", monospace;
+}
+
+html {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-base);
+  line-height: var(--line-height-base);
+  color: var(--color-base);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-heading);
+  line-height: var(--line-height-heading);
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+small {
+  font-size: 70%;
+  color: var(--color-small);
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: var(--font-family-code);
+}
+
+section {
+  text-align: center;
+
+  & + section {
+    margin-top: 2em;
+    padding-top: 2em;
+    border-top: 1px solid #eee;
+  }
+}
+
+.container {
+  max-width: 740px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.header {
+  margin-bottom: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.footer {
+  margin-top: 4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.compact {
+  & > :first-child {
+    margin-top: 0 !important;
+  }
+
+  & > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+.columns {
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center;
+
+  & li {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    line-height: 1.2;
+    list-style: none;
+    break-inside: avoid;
+  }
+}
+
+.about{
+  column-count: 2;
+}
+
+.education {
+  column-count: 2;
+}
+
+.languages {
+  column-count: 3;
+}
+
+.skills {
+  column-count: 3;
+}
+
+.courses {
+  column-count: 2;
+}
+
+.stars {
+  font-size: 80%;
+
+  & .star {
+    opacity: 0.35;
+  }
+
+  & .star.is-filled {
+    opacity: 1;
+  }
+
+  &.is-count-1 .star {
+    color: #c92a2a;
+  }
+
+  &.is-count-2 .star,
+  &.is-count-3 .star {
+    color: #fab005;
+  }
+
+  &.is-count-4 .star,
+  &.is-count-5 .star {
+    color: #087f5b;
+  }
+}
+
+.flag {
+  height: 18px;
+  margin-top: 4px;
+  margin-left: 6px;
+  margin-bottom: 4px;
+  border-radius: 2px;
+  vertical-align: top;
+}
