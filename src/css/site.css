@@ -1,5 +1,4 @@
 @import url("normalize.css");
-@import url("./print.css");
 
 :root {
   --font-family-base: "Assistant", sans-serif;
@@ -33,6 +32,10 @@ h5,
 h6 {
   font-weight: var(--font-weight-heading);
   line-height: var(--line-height-heading);
+}
+
+h3 {
+  margin-top: 0;
 }
 
 a {
@@ -115,8 +118,16 @@ section {
   }
 }
 
-.contact{
-  column-count: 2;
+.picture {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: 0px -15px;
+  border-radius: 50%;
+}
+
+.emoji {
+  object-position: 20px 0px 0px 0px;
 }
 
 .education {
@@ -127,12 +138,58 @@ section {
   column-count: 3;
 }
 
+.experience {
+  column-count: 2;
+}
+
+img {
+  max-width: 100%;
+}
+
+.new-page {
+  page-break-before: always;
+}
+
+.job {
+  font-size: 70%;
+}
+
 .skills {
   column-count: 3;
 }
 
 .courses {
   column-count: 2;
+}
+
+.projects {
+  column-count: 1;
+
+  & h5 {
+    margin: 15px 0 5px 0;
+    color: #087f5b;
+  }
+
+  & p {
+    font-size: 70%;
+    margin: 0;
+  }
+}
+
+.project-link {
+  font-size: 70%;
+}
+
+.project-link + .project-link {
+  margin-top: 1em;
+}
+
+.english {
+  font-size: 70%;
+}
+
+.ects {
+  font-size: 70%;
 }
 
 .stars {
@@ -168,4 +225,17 @@ section {
   margin-bottom: 4px;
   border-radius: 2px;
   vertical-align: top;
+}
+
+.paper-plane {
+  height: 18px;
+  margin-top: 9px;
+  margin-left: 6px;
+  margin-bottom: 0px;
+  border-radius: 2px;
+  vertical-align: top;
+}
+
+.no-bullet {
+  list-style-type: none;
 }
