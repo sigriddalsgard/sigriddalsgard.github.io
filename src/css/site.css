@@ -171,13 +171,8 @@ img {
   }
 
   & p {
-    font-size: 70%;
     margin: 0;
   }
-}
-
-.project-link {
-  font-size: 70%;
 }
 
 .project-link + .project-link {
